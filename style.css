@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+*{padding: 0;margin: 0;}
+#main{min-height: 100vh;padding: 0 15%;}
+#main i{font-size: 100px;color: #505050;}
+#main >div{
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 33%;
+}
+.player-area{
+    border-top: 5px solid #505050;
+}
+.player-area i{
+    margin:0 80px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    color: #505050;
+    font-size: 100px;
+}
+.player-area i:hover{
+    color: #1c1438!important;
+    text-shadow: -1px -1px 8px rgba(150, 150, 150, 0.3);
+    transform: scale(1.1);
+}
+.opponent-area{
+    border-bottom: 5px solid #505050;
+}
+.game-container{
+    border: 5px solid #505050;
+    padding: 20px;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 120px;
+    justify-content: center;
+    width: 120px;
+}
+.game-container span{
+    position: absolute;
+    top: -40px;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+}
+#state{
+    position: absolute;
+    bottom: 10%;
+    color: #333;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+@media screen and (max-width:992px){    
+    .player-area i{
+        margin: 0 20px;
+    }
+    #main i{
+        font-size: 70px;
+    }
+    .game-container{
+        height: 80px!important;
+        width: 80px!important;
+        padding: 0;
+    }
+    .game-container i{
+        font-size: 60px!important;
+    }
+}
+@media screen and (max-height:1000px){
+    #main{min-height: auto}
+    #main >div{height: auto;padding:60px 0;}
+}
