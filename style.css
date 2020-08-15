@@ -3,8 +3,13 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 *{padding: 0;margin: 0;}
-#main{min-height: 100vh;padding: 0 15%;}
+#main{min-height: 100vh;padding: 0 15%;width: 100%;}
 #main i{font-size: 100px;color: #505050;}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #main >div{
     border-radius: 5px;
     display: flex;
@@ -51,7 +56,7 @@ body{
 }
 #state{
     position: absolute;
-    bottom: 10%;
+    bottom: 8%;
     color: #333;
     text-align: center;
     left: 0;
@@ -74,6 +79,7 @@ body{
         font-size: 60px!important;
     }
 }
+
 @media screen and (max-height:1000px){
     #main{min-height: auto}
     #main >div{height: auto;padding:60px 0;}
